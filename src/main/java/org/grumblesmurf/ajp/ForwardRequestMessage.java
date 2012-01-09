@@ -128,10 +128,10 @@ class ForwardRequestMessage
             String value = attribute.b;
 
             if (Constants.COMMON_ATTRIBUTES.containsKey(name)) {
-                writeInt(Constants.COMMON_ATTRIBUTES.get(name));
+            	writeByte(Constants.COMMON_ATTRIBUTES.get(name));
                 writeString(value);
             } else {
-                writeInt(Constants.ATTRIBUTE_GENERIC);
+                writeByte(Constants.ATTRIBUTE_GENERIC);
                 writeString(name);
                 writeString(value);
             }
