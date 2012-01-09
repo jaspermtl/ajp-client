@@ -13,7 +13,7 @@
 // limitations under the License.
 package org.grumblesmurf.ajp;
 
-enum AjpMethod 
+public enum AjpMethod 
 {
     OPTIONS(1),
     GET(2),
